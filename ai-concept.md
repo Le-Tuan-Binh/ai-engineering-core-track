@@ -6,9 +6,11 @@ Refers to a **state-of-the-art** model at the cutting edge of technology, essent
 
 **Key points**
 
-- Use cutting-edge techniques, new architectures, or much larger datasets than older models.
+- Built using cutting-edge techniques, new architectures, or massive training datasets.
 
 - Perform multiple types of tasks like language, vision, multimodal, etc. instead of being specialized.
+
+- Often include the latest advances in safety, alignment, efficiency, and generalization.
 
 **Examples**
 
@@ -19,13 +21,11 @@ Refers to a **state-of-the-art** model at the cutting edge of technology, essent
 
 **Applications**
 
-Used in research, new products, or experimental AI applications such as language synthesis, image generation, and complex data analysis.
-
-In short, calling a model means it is top-tier, advanced, and at the forefront of AI development, rather than a standard or widely deployed model.
+Used in research, new products, or experimental AI applications such as language synthesis, image generation, and complex data analysis. In short, calling a model means using a cutting-edge, advanced AI rather than a standard one.
 
 ## Messages and Role
 
-When using OpenAI’s Chat API, inputs are structured as messages, which are objects containing a role and content.
+When using OpenAI’s Chat API, inputs are structured as **messages**, which are objects containing a **role** and **content**. This format allows the model to understand context and respond appropriately.
 
 Large Language Models like ChatGPT are trained to process requests using a standardized prompt structure to ensure consistency and accuracy in their responses. 
 
@@ -51,3 +51,34 @@ messages = [
 
 
 This structure allows to understand the context and respond appropriately, maintaining the conversation flow.
+
+# Three Ways to Use Models
+
+There are three main ways to use modern AI models.
+
+## Chat Interfaces
+
+**Chat interfaces**, such as ChatGPT or similar conversational AI tools, provide the simplest way to use a model. 
+Users interact with the system directly by typing questions or instructions and receiving responses in real time. 
+
+This approach requires no programming skills and is ideal for everyday tasks like learning, generating ideas, writing content, solving problems, or exploring concepts quickly. 
+Everything happens through a user-friendly interface so it is the most accessible entry point for interacting with AI models.
+
+## Cloud APIs
+
+**Cloud APIs** allow to integrate AI models into applications, workflows, or backend systems. 
+By sending requests to a cloud-hosted model through an API, programs can process text, images, or other data and receive structured outputs.
+
+This approach is widely used in production environments where automation, scaling, and reliability are important. 
+Some libraries like **LangChain** make it easier to build complex AI applications, and managed services such as **Amazon Bedrock**, **Google Vertex**, and **Azure OpenAI** provide powerful infrastructure for deploying AI systems at scale. 
+Cloud APIs are the best choice when building AI-driven products or automating large processes.
+
+
+## Direct Inference
+
+**Direct inference** refers to running models locally on your own hardware instead of using cloud services. 
+It can load and execute models using libraries like **HuggingFace** **Transformers**, or run optimized local models through tools like **Ollama**.
+
+This approach offers key advantages such as greater privacy, offline capability, and reduced long-term costs, since everything is processed on the user’s own device. 
+However, it may require more technical setup and suitable hardware, especially for larger models. 
+It is well suited for secure environments, experimentation, or situations where cloud access is limited or undesirable.
